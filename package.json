@@ -1,0 +1,13 @@
+{
+  "name": "cicd-demo-app",
+  "version": "1.0.0",
+  "description": "Simple demo app for AWS + Docker + Jenkins CI/CD project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
