@@ -3,15 +3,15 @@ pipeline {
 
     environment {
         AWS_REGION   = 'ap-south-1'                 // change to your AWS region
-        ECR_REPO     = '<your-account-id>.dkr.ecr.ap-south-1.amazonaws.com/myapp'
+        ECR_REPO     = '075483721080.dkr.ecr.ap-south-1.amazonaws.com/myapp'
         IMAGE_TAG    = "${env.BUILD_NUMBER}"
-        PROD_SERVER  = 'ec2-user@<prod-server-ip>'
+        PROD_SERVER  = 'ec2-user@3.106.192.79'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-username>/myapp.git'
+                git branch: 'main', url: 'https://github.com/https://github.com/Sumitbabhulkar/myapp.git/myapp.git'
             }
         }
 
