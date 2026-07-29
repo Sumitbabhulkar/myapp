@@ -5,7 +5,7 @@ pipeline {
         AWS_REGION   = 'ap-south-1'                 // change to your AWS region
         ECR_REPO     = '075483721080.dkr.ecr.ap-south-1.amazonaws.com/myapp'
         IMAGE_TAG    = "${env.BUILD_NUMBER}"
-        PROD_SERVER  = 'ec2-user@3.106.192.79'
+        PROD_SERVER  = 'ec2-user@3.25.97.105'
     }
 
     stages {
